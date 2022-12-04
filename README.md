@@ -1,19 +1,19 @@
 ﻿# Interpreta
-##1.Nome do Projeto
+## 1.Nome do Projeto
 
 Interpreta.
 
-##2.Breve Síntese da Proposta
+## 2.Breve Síntese da Proposta
 
 Diante do crescente número de analfabetos funcionais no país, isto é, pessoas que apesar de saber ler, não conseguem interpretar textos simples e da demanda dessa competência em grandes vestibulares, o objetivo é criar um aplicativo capaz de auxiliar essas pessoas no que diz respeito ao aprendizado em compreensão textual através de um aplicativo com uma interface simples e divertida.
 
-##3.Equipe Técnica
+## 3.Equipe Técnica
 
 Maria Luísa Alaquoke Ferreira dos Santos
 Matheus Gamarra Galdino dos Santos
 
 
-##4. Justificativa de Aderência da Proposta ao Tema Escolhido 
+## 4. Justificativa de Aderência da Proposta ao Tema Escolhido 
 
 O acesso à educação pública no Brasil, embora tenha sido ampliado nas últimas décadas, ainda é frágil em comparação com a educação privada. Isso faz com que, mesmo sendo alfabetizados, grande parte da população carente tenha muitas dificuldades com questões relacionadas ao ensino básico.
 
@@ -21,7 +21,7 @@ Atualmente, somente 8% dos alfabetizados no país lêem e compreendem o que foi 
 
 Em grandes vestibulares, como o ENEM, por exemplo, saber interpretar textos é de suma importância para o sucesso do candidato no exame, por isso, ser capaz de fazê-lo pode ser a chave para abrir portas de múltiplas oportunidades.
 
-##5. Metodologia de execução
+## 5. Metodologia de execução
 
 O projeto Interpreta será desenvolvido usando o processo de engenharia de software eXtreme Programming (XP). 
 
@@ -33,13 +33,13 @@ Se projetar é bom, então refatorar o tempo todo;
 Se teste de integração é bom, então que se integre o tempo todo;
 Se simplicidade é bom, desenvolva uma solução não apenas que funcione, mas que seja a mais simples possível;
 Se iterações curtas é bom, então mantenha-as realmente curtas;
-###Escopo
-###Tempo
-###Qualidade
+### Escopo
+### Tempo
+### Qualidade
 A qualidade do sistema desenvolvido estará na confiabilidade, simplicidade e desempenho do aplicativo.
-##6. Recursos Humanos
+## 6. Recursos Humanos
    Descritos na equipe técnica.
-##7. Riscos
+## 7. Riscos
 
 Identificação
 Ação para mitigar ou resolver os riscos
@@ -50,20 +50,20 @@ iniciais
 a complexidade do sistema, não devidamente percebida nas etapas iniciais
 
 
-##8. Cronograma
+## 8. Cronograma
 
-##9. Interface de usuário
+## 9. Interface de usuário
 
 O Interpreta é dividido em aplicativo e sistema web, onde os dois são subdividos em versão dos servidores e dos alunos.
 
-##10. Áudio e Música
+## 10. Áudio e Música
 
 Será utilizado um som de aviso quando o usuário receber uma notificação, sem direitos autorais.
 
-##11. Estilo e preferências
+## 11. Estilo e preferências
 
 O aplicativo e o sistema web utilizam estilo responsivo.
 
-##12. Ferramentas, plug-ins e dependências usados no desenvolvimento do aplicativo
+## 12. Ferramentas, plug-ins e dependências usados no desenvolvimento do aplicativo
 
 O aplicativo irá utilizar a biblioteca da linguagem Javascript React Native e o Banco de Dados Firebase.
