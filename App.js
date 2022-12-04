@@ -1,20 +1,35 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import 'react-native-gesture-handler';
+import {NavigationContainer} from '@react-navigation/native';
+import {createStackNavigator} from '@react-navigation/stack';
+import Cycles from './screens/Cycles';
+import Cycle1 from './screens/Cycle1';
+import Dictionary from './screens/Dictionary';
+import Parafrasis from './screens/Parafrasis';
+import Reading from './screens/Reading';
+import HomeScreen from './screens/HomeScreen';
+import SignIn from './screens/SignIn';
+import SignUp from './screens/SignUp';
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+const Stack = createStackNavigator();
+
+function MyStack(){
+  return(
+    <Stack.Navigator screenOptions={{headerShown:false}}>
+      <Stack.Screen name="HomeScreen" component={HomeScreen}/>
+      <Stack.Screen name="SignUp" component={SignUp}/>
+      <Stack.Screen name="SignIn" component={SignIn}/>
+      <Stack.Screen name="Cycles" component={Cycle1}/>
+      <Stack.Screen name="Cycle1" component={Cycles}/>
+      <Stack.Screen name="Parafrasis" component={Parafrasis}/>
+      <Stack.Screen name="Dictionary" component={Dictionary}/>
+      <Stack.Screen name="Reading" component={Reading}/>
+    </Stack.Navigator>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+export default function App(){
+  return(
+    <NavigationContainer>
+      <MyStack />
+    </NavigationContainer>
+  );
+}
