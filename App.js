@@ -9,15 +9,19 @@ import Reading from './screens/Reading';
 import HomeScreen from './screens/HomeScreen';
 import SignIn from './screens/SignIn';
 import SignUp from './screens/SignUp';
+import HomePage from './screens/HomePage';
+import FirstAccess from './screens/FirstAccess';
 
 const Stack = createStackNavigator();
 
 function MyStack(){
   return(
     <Stack.Navigator screenOptions={{headerShown:false}}>
-      <Stack.Screen name="HomeScreen" component={HomeScreen}/>
+      <Stack.Screen name="HomeScreen" component={HomePage}/>
       <Stack.Screen name="SignUp" component={SignUp}/>
+      <Stack.Screen name="FirstAccess" component={FirstAccess}/>
       <Stack.Screen name="SignIn" component={SignIn}/>
+      <Stack.Screen name="HomePage" component={HomePage}/>
       <Stack.Screen name="Cycles" component={Cycle1}/>
       <Stack.Screen name="Cycle1" component={Cycles}/>
       <Stack.Screen name="Parafrasis" component={Parafrasis}/>

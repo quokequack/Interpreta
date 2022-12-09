@@ -25,7 +25,7 @@ export default function SignUp({navigation}){
                 alert("Usuário cadastrado com sucesso!");
                 navigation.reset({
                     index:0,
-                    routes:[{name:"HomePage"}]
+                    routes:[{name:"FirstAccess"}]
                 });
             })
             .catch((error)=>{

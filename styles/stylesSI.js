@@ -1,66 +1,69 @@
 import React from "react";
 import { StyleSheet } from "react-native";
 
-const stylesSU = StyleSheet.create({
+const stylesSI = StyleSheet.create({
     container:{
         flex:1,
-        backgroundColor:"#07bdff",
+        backgroundColor:'#FD7A39',
     },
     h1:{
-        fontFamily:'Segoe Ui',
-        fontWeight:'bold',
+        color:"white",
         fontSize:50,
-        color:'white',
-        marginLeft:25,
+        fontFamily:"Segoe Ui",
+        fontWeight:'bold',
         marginTop:40,
+        marginLeft:25,
     },
     form:{
-        marginTop:40,
+        marginTop:50,
     },
     inputTxt:{
-        fontSize:25,
-        color:'white',
         fontFamily:'Segoe Ui',
-        marginLeft:30,
+        color:'white',
+        fontWeight:'bold',
+        fontSize:25,
+        marginLeft:32,
         marginTop:20,
     },
-    txtBox:{
+    inputBox:{
         width:350,
         height:61,
         backgroundColor:'white',
+        marginLeft:32,
         borderRadius:10,
-        marginLeft:30,
         marginTop:20,
+        fontFamily:'Segoe Ui',
         fontSize:25,
-        color:"#ade9ff",
+        color:"#feccb4",
         fontWeight:'bold',
     },
     buttons:{
         alignItems:'center',
         justifyContent:'center',
-        marginTop:20,
-    },
-    p:{
-        fontSize:25,
-        fontFamily:'Segoe Ui',
-        color:'white',
         marginTop:60,
     },
-    signBtn:{
+    btn:{
         width:250,
         height:68,
         backgroundColor:'white',
         borderRadius:10,
-        alignItems:'center',
-        marginTop:20,
+    },
+    p:{
+        fontFamily:"Segoe Ui",
+        color:'white',
+        fontSize:25,
+        textAlign:'center',
+        marginTop:100,
+        marginBottom:20,
     },
     btnTxt:{
+        color:'#FD7A39',
+        fontFamily:"Segoe Ui",
         fontSize:25,
-        fontWeight:'bold',
-        fontFamily:'Segoe Ui',
+        textAlign:'center',
         marginTop:15,
-        color:'#07bdff',
+        fontWeight:"bold",
     }
 });
 
-export default stylesSU;
+export default stylesSI;
