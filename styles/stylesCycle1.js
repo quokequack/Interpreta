@@ -15,6 +15,7 @@ const stylesCycle1 = StyleSheet.create({
         color:'white',
     },
     texts:{
+        flexDirection: "row",
         marginTop:23,
         display:'inline-block',
     },
@@ -25,6 +26,7 @@ const stylesCycle1 = StyleSheet.create({
         marginTop:30,
         marginLeft:30,
         color:'white',
+        flex: 1,
     },
     level:{
         fontFamily:'Segoe Ui',
@@ -33,25 +35,24 @@ const stylesCycle1 = StyleSheet.create({
         marginLeft:150,
         marginRight:30,
         color:'white',
+        flex: 1,
     },
     buttons:{
         marginTop:60,
         justifyContent:'center',
         alignItems:'center',
-        backgroundColor:'black',
+        backgroundColor:'#07bdff',
     },
-
+   
     btn:{
         width:400,
         heigth:200,
     },
     btn2:{
-        marginTop:100,
         width:400,
         heigth:200,
     },
     btn3:{
-        marginTop:100,
         width:400,
         heigth:200,
     },
@@ -61,7 +62,12 @@ const stylesCycle1 = StyleSheet.create({
         fontFamily:"Segoe Ui",
         fontWeight:'bold',
         color:'white',
+    },linha:{
+      width: "90%",
+      margin: "20%",
+      borderBottomWidth: 3,
+      borderBottomColor: "#ffffff",
     }
-});
+  });
 
 export default stylesCycle1;
