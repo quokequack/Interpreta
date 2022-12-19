@@ -14,13 +14,15 @@ const stylesRe = StyleSheet.create({
       borderBottomWidth: 5,
       borderBottomColor: "#ffffff",
     },container2: {
+      marginTop:50,
       flex: 1,
       flexWrap: "wrap",
       margin:30,
-      justifyContent:"space-between",
+      alignItems:"center",
       flexDirection: "column",
       backgroundColor: '#F5E45F',
-    },h1:{
+    },
+    h1:{
       fontFamily:"Segoe Ui",
       fontSize:50,
       fontWeight:'bold',
@@ -48,22 +50,18 @@ const stylesRe = StyleSheet.create({
   },
   BtWord1:{
     width:260,
-    height:"auto",
-    backgroundColor: '#ffffff',
-    textAlign:"center",
+    height:96,
     borderRadius: 10,
   }, BtWord2:{
     width:260,
     height:64,
-    backgroundColor: '#ffffff',
-    textAlign:"center",
     borderRadius: 10,
+    marginTop:20,
   },BtWord3:{
     width:260,
     height:64,
-    backgroundColor: '#ffffff',
-    textAlign:"center",
     borderRadius: 10,
+    marginTop:20,
   },choice:{
     fontFamily:"Segoe Ui",
     color:'#FD7A39',

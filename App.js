@@ -22,8 +22,8 @@ function MyStack(){
       <Stack.Screen name="FirstAccess" component={FirstAccess}/>
       <Stack.Screen name="SignIn" component={SignIn}/>
       <Stack.Screen name="HomePage" component={HomePage}/>
-      <Stack.Screen name="Cycles" component={Cycle1}/>
-      <Stack.Screen name="Cycle1" component={Cycles}/>
+      <Stack.Screen name="Cycles" component={Cycles}/>
+      <Stack.Screen name="Cycle1" component={Cycle1}/>
       <Stack.Screen name="Parafrasis" component={Parafrasis}/>
       <Stack.Screen name="Dictionary" component={Dictionary}/>
       <Stack.Screen name="Reading" component={Reading}/>

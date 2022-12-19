@@ -128,5 +128,5 @@ const styles = StyleSheet.create({
     alignContent:"center"
     }
 })
- 
-export default Modal
+
+export default Modal;

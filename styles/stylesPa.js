@@ -17,7 +17,7 @@ const stylesPa = StyleSheet.create({
       flex: 1,
       flexWrap: "wrap",
       margin:30,
-      justifyContent:"space-between",
+      alignItems:"center",
       flexDirection: "column",
       backgroundColor: '#FD7A39',
     },h1:{
@@ -44,25 +44,25 @@ const stylesPa = StyleSheet.create({
   },BtWord1:{
     width:260,
     height:64,
-    backgroundColor: '#ffffff',
+    marginTop: 30,
     textAlign:"center",
     borderRadius: 10,
   }, BtWord2:{
     width:260,
     height:64,
-    backgroundColor: '#ffffff',
+    marginTop: 30,
     textAlign:"center",
     borderRadius: 10,
   },BtWord3:{
     width:260,
     height:64,
-    backgroundColor: '#ffffff',
+    marginTop: 30,
     textAlign:"center",
     borderRadius: 10,
   },BtWord4:{
     width:260,
     height:64,
-    backgroundColor: '#ffffff',
+    marginTop: 30,
     textAlign:"center",
     borderRadius: 10,
   },choice:{
