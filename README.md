@@ -53,6 +53,7 @@ a complexidade do sistema, não devidamente percebida nas etapas iniciais
 ## 8. Cronograma
 
 ## 9. Interface de usuário
+![INTERPRETA](https://user-images.githubusercontent.com/88796071/208884169-7dca52bd-8c4c-43c3-ac9b-1e58a45ab5e1.png)
 
 O Interpreta é dividido em aplicativo e sistema web, onde os dois são subdividos em versão dos servidores e dos alunos.
 
