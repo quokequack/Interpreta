@@ -58,7 +58,7 @@ const stylesHP = StyleSheet.create({
         marginTop:20,
     },
     lessons:{
-        marginTop:30,
+        marginTop:10,
         display:'flex',
         justifyContent:"center",
         alignItems:'center',
@@ -75,7 +75,7 @@ const stylesHP = StyleSheet.create({
         width:330,
         height:74,
         backgroundColor:'white',
-        marginTop:20,
+        marginTop:15,
         borderRadius:10,
     },
     btnTxt:{
@@ -100,7 +100,15 @@ const stylesHP = StyleSheet.create({
         textAlign:'center',
         marginTop:10,
         color:"#f5e45f",
-    }
+    },
+    errorMessage:{
+        fontFamily:"Segoe Ui",
+        fontWeight:'bold',
+        color:'#ff6067',
+        textAlign:'center',
+        fontSize:25,
+        marginTop:10,
+    },
 });
 
 export default stylesHP;

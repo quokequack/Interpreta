@@ -6,7 +6,8 @@ import stylesSU from "../styles/stylesSU";
 
 
 export default function SignUp({navigation}){
-
+    const [errorText, setErrorText] = useState("");
+    const [showValue, setShowValue] = useState(false);
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
@@ -30,13 +31,16 @@ export default function SignUp({navigation}){
             })
             .catch((error)=>{
                 if(error.code == 'auth/weak-password'){
-                    alert("Sua senha deve ser mais forte!");
+                    setShowValue(true);
+                    setErrorText('Sua senha deve ser mais forte!')
                     return;
                 }else if(error.code === 'auth/invalid-email'){
-                    alert("Coloque um email válido!");
+                    setShowValue(true);
+                    setErrorText('Email inválido!');
                     return;
                 }else{
-                    alert("Algo deu errado. Tente novamente!!!");
+                    setShowValue(true);
+                    setErrorText('Algo deu errado, tente novamente!');
                     return;
                 }
             })
@@ -45,13 +49,14 @@ export default function SignUp({navigation}){
     return(
         <View style={stylesSU.container}>
             <Text style={stylesSU.h1}>|INTERPRETA.</Text>
+            {showValue? <Text style={stylesSU.errorMessage}>{errorText}</Text>:null}
             <View style={stylesSU.form}>
                 <Text style={stylesSU.inputTxt}>Nome:</Text>
                 <TextInput style={stylesSU.txtBox} onChangeText={(name)=> setName(name)}></TextInput>
                 <Text style={stylesSU.inputTxt}>Email:</Text>
                 <TextInput style={stylesSU.txtBox} onChangeText={(email)=> setEmail(email)}></TextInput>
                 <Text style={stylesSU.inputTxt}>Senha:</Text>
-                <TextInput secureTextEntry={true} style={stylesSU.txtBox} onChangeText={(password)=> setPassword(password)} placeholder='**********'></TextInput>
+                <TextInput secureTextEntry={true} style={stylesSU.txtBox} onChangeText={(password)=> setPassword(password)}></TextInput>
                 <View style={stylesSU.buttons}>
                   <TouchableOpacity style={stylesSU.signBtn} onPress={createAccount}>
                     <Text style={stylesSU.btnTxt}>Fazer cadastro!</Text>

@@ -63,7 +63,15 @@ const stylesSI = StyleSheet.create({
         textAlign:'center',
         marginTop:15,
         fontWeight:"bold",
-    }
+    },
+    errorMessage:{
+        fontFamily:"Segoe Ui",
+        fontWeight:'bold',
+        color:'#ad0008',
+        textAlign:'center',
+        fontSize:20,
+        marginTop:20,
+    },
 });
 
 export default stylesSI;

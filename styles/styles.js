@@ -59,7 +59,14 @@ const styles = StyleSheet.create({
         fontFamily: "Segoe Ui",
         fontWeight: "bold",
         color: "#00c69e"
-    }
+    },
+    errorMessage:{
+        fontFamily:"Segoe Ui",
+        fontWeight:'bold',
+        color:'#ff9ca1',
+        textAlign:'center',
+        fontSize:25,
+    },
 })
 
 export default styles;

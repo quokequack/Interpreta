@@ -60,7 +60,15 @@ const stylesSU = StyleSheet.create({
         fontFamily:'Segoe Ui',
         marginTop:15,
         color:'#07bdff',
-    }
+    },
+    errorMessage:{
+        fontFamily:"Segoe Ui",
+        fontWeight:'bold',
+        color:'#ad0008',
+        textAlign:'center',
+        fontSize:20,
+        marginTop:20,
+    },
 });
 
 export default stylesSU;
