@@ -4,7 +4,7 @@ import React, {useState} from 'react';
 import Modal from "./Modal";
 import stylesDi from '../styles/stylesDi';
 
-export default function Dictionary(props) {
+export default function Dictionary({navigation}) {
   const [modal, setModal] = useState(false);
   const [num, setNum] = useState(0);
   let palavras =["SOLITUDE","FERRENHO","MODULAR","INSALUBRE","SALUTAR","EXÍCIO","DETURPAÇÃO","NÓDOA"];
@@ -56,6 +56,14 @@ export default function Dictionary(props) {
       </TouchableOpacity>
       </View>
       </View>
+    </View>
+    <View style={stylesDi.bottomBtn}>
+      <TouchableOpacity style={stylesDi.btn} onPress={()=> navigation.navigate('Cycles')}>
+        <Text style={stylesDi.btnTxt}>Voltar</Text>
+      </TouchableOpacity>
+      <TouchableOpacity style={stylesDi.btn} onPress={()=> navigation.navigate('Reading')}>
+        <Text style={stylesDi.btnTxt}>Próximo</Text>
+      </TouchableOpacity>
     </View>
     <Modal
     nome={palavras[num]}

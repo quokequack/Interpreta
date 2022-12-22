@@ -67,6 +67,24 @@ const stylesCycle1 = StyleSheet.create({
       margin: "20%",
       borderBottomWidth: 3,
       borderBottomColor: "#ffffff",
+    },
+    backBtn:{
+        backgroundColor:'white',
+        flex: "row",
+        width:60,
+        height:38,
+        marginTop: 38,
+        marginLeft:340,
+        position:'absolute',
+        borderRadius: 100,
+        alignItems: "Center",
+        alignContent: "center",
+        justifyContent: "center"
+    },
+    backBtnTxt:{
+        fontFamily: "Segoe Ui",
+        fontWeight: "bold",
+        color: "#07bdff"
     }
   });
 

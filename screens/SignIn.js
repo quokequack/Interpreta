@@ -29,7 +29,7 @@ export default function SignIn({navigation}){
                 <Text style={stylesSI.inputTxt}>Email</Text>
                 <TextInput style={stylesSI.inputBox} onChangeText={(email) => setEmail(email)}></TextInput>
                 <Text style={stylesSI.inputTxt}>Senha</Text>
-                <TextInput style={stylesSI.inputBox} onChangeText={(password) => setPassword(password)}></TextInput>
+                <TextInput  style={stylesSI.inputBox} onChangeText={(password) => setPassword(password)}></TextInput>
                 <View style={stylesSI.buttons}>
                   <TouchableOpacity style={stylesSI.btn} onPress={Login}>
                     <Text style={stylesSI.btnTxt}>Entrar</Text>

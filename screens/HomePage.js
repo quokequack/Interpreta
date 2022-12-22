@@ -12,6 +12,10 @@ export default function HomePage({navigation}){
         });
         alert("Deslogado com sucesso!");
     }
+    
+    function block(){
+        alert("Ciclo Bloqueado!!")
+    };
     return(
         <View style={stylesHP.container}>
             <Text style={stylesHP.h1}>|Interpreta.</Text>
@@ -33,23 +37,23 @@ export default function HomePage({navigation}){
             </View>
             <View style={stylesHP.lessons}>
                 <Text style={stylesHP.txtLessons}>Últimas Lições:</Text>
-                <TouchableOpacity style={stylesHP.btnLessons}>
+                <TouchableOpacity style={stylesHP.btnLessons} onPress={()=>navigation.navigate("Parafrasis")}>
                     <Text style={stylesHP.btnTxt}>Paráfrase Nv.1</Text>
                 </TouchableOpacity>
-                <TouchableOpacity style={stylesHP.btnLessons}>
+                <TouchableOpacity style={stylesHP.btnLessons} onPress={()=>navigation.navigate("Dictionary")}>
                     <Text style={stylesHP.btnTxt}>Dicionário Nv.1</Text>
                 </TouchableOpacity>
-                <TouchableOpacity style={stylesHP.btnLessons}>
+                <TouchableOpacity style={stylesHP.btnLessons} onPress={()=>navigation.navigate("Reading")}>
                     <Text style={stylesHP.btnTxt}>Interpretação Nv.1</Text>
                 </TouchableOpacity>
                 <Text style={stylesHP.txtLessons}>Próximas Lições:</Text>
-                <TouchableOpacity style={stylesHP.btnLessons}>
+                <TouchableOpacity style={stylesHP.btnLessons} onPress={block}>
                     <Text style={stylesHP.btnTxt}>Paráfrase Nv.2</Text>
                 </TouchableOpacity>
-                <TouchableOpacity style={stylesHP.btnLessons}>
+                <TouchableOpacity style={stylesHP.btnLessons} onPress={block}>
                     <Text style={stylesHP.btnTxt}>Dicionário Nv.2</Text>
                 </TouchableOpacity>
-                <TouchableOpacity style={stylesHP.btnLessons}>
+                <TouchableOpacity style={stylesHP.btnLessons} onPress={block}>
                     <Text style={stylesHP.btnTxt}>Interpretação Nv.2</Text>
                 </TouchableOpacity>
             </View>

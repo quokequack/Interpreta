@@ -99,7 +99,26 @@ const stylesDi = StyleSheet.create({
   marginTop:15,
   fontSize:25,
   fontWeight:'bold',
+}, bottomBtn:{
+  margin:10,
+  display:'flex',
+  flexDirection:"row",
+  justifyContent:'center',
 },
+btn:{
+  backgroundColor:'white',
+  width:100,
+  height:38,
+  marginLeft:10,
+  borderRadius:10,
+  alignItems:'center',
+},
+btnTxt:{
+  marginTop:10,
+  fontFamily:'Segoe Ui',
+  fontWeight:'bold',
+  color:"#FE51B0",
+}
 });
 
 

@@ -23,6 +23,11 @@ export default function Cycle1({navigation}){
             <Text style={stylesCycle1.btnTxt}>INTERPRETAÇÃO</Text>
             </TouchableOpacity>
         </View>
+        <TouchableOpacity style={stylesCycle1.backBtn} onPress={()=> navigation.navigate("Cycles")}>
+        <Text style={stylesCycle1.backBtnTxt}>
+          Voltar
+        </Text>
+      </TouchableOpacity>
     </View>
   );
 }

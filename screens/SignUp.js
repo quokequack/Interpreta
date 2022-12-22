@@ -51,7 +51,7 @@ export default function SignUp({navigation}){
                 <Text style={stylesSU.inputTxt}>Email:</Text>
                 <TextInput style={stylesSU.txtBox} onChangeText={(email)=> setEmail(email)}></TextInput>
                 <Text style={stylesSU.inputTxt}>Senha:</Text>
-                <TextInput style={stylesSU.txtBox} onChangeText={(password)=> setPassword(password)} placeholder='**********'></TextInput>
+                <TextInput secureTextEntry={true} style={stylesSU.txtBox} onChangeText={(password)=> setPassword(password)} placeholder='**********'></TextInput>
                 <View style={stylesSU.buttons}>
                   <TouchableOpacity style={stylesSU.signBtn} onPress={createAccount}>
                     <Text style={stylesSU.btnTxt}>Fazer cadastro!</Text>

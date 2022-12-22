@@ -41,8 +41,25 @@ const styles = StyleSheet.create({
         fontWeight:'bold',
         marginTop:25,
         marginLeft:15,
-        
     },
+    backBtn:{
+        backgroundColor:'white',
+        flex: "row",
+        width:60,
+        height:38,
+        marginTop: 38,
+        marginLeft:340,
+        position:'absolute',
+        borderRadius: 100,
+        alignItems: "Center",
+        alignContent: "center",
+        justifyContent: "center"
+    },
+    backBtnTxt:{
+        fontFamily: "Segoe Ui",
+        fontWeight: "bold",
+        color: "#00c69e"
+    }
 })
 
 export default styles;

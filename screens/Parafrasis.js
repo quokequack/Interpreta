@@ -5,7 +5,7 @@ import stylesPa from "../styles/stylesPa";
  
  
 let color = "#ffffff";
-export default function Parafrasis(props) {
+export default function Parafrasis({navigation}) {
   const [Num, setNum] = useState(5);
 function muda() {
   return color="#ff0000";
@@ -32,6 +32,14 @@ function muda() {
         <Text style={[stylesPa.choice,{color: !(Num==4)?"#FD7A39":"#ffffff"}]}> Ruim</Text>
       </TouchableOpacity>
     </View>
+    <View style={stylesPa.bottomBtn}>
+      <TouchableOpacity style={stylesPa.btn} onPress={()=> navigation.navigate('Cycle1')}>
+        <Text style={stylesPa.btnTxt}>Voltar</Text>
+      </TouchableOpacity>
+      <TouchableOpacity style={stylesPa.btn} onPress={()=> navigation.navigate("Dictionary")}>
+        <Text style={stylesPa.btnTxt}>Próximo</Text>
+      </TouchableOpacity>
+      </View>
 </View>
   );
 }
